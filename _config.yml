@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Explore my newest project: a resistance calculator that uses computer vision!
   I'm Harrison Kirkham, a second year Electrical Engineering student at BYU.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jhk35.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # itter_username: jekyllrb
 github_username:  jhk35
 
@@ -33,6 +33,9 @@ theme: minima
 plugins:
   - jekyll-feed
 
+markdown: kramdown
+kramdown:
+  input: GFM
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -41,7 +44,7 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+#  exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
@@ -52,3 +55,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+include:
+  - assets
+  - assets/media
+  - assets/media/tiny-robot-arm
