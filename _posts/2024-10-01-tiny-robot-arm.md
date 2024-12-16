@@ -49,7 +49,7 @@ Assembly was just dropping the servos into their brackets, inserting screws, and
 Everything went together nicely on this one. There is a fair amount of play in the servos, leading to imprecise movements and shaking.
 
 ## Code
-```
+{% highlight ruby %}
 #include <Arduino.h>
 #include <Servo.h>
 #include <math.h>
@@ -102,7 +102,7 @@ void loop() {
   }
   delay(500);
 }
-```
+{% endhighlight %}
 
 
 
