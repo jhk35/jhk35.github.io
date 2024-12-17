@@ -54,7 +54,7 @@ Assembly was just dropping the servos into their brackets, inserting screws, and
 ![Simple Electronic Diagram, made in Tinkercad, using Arduino Nano, 9 Volt Battery, 4x L7805, and 4x SG90 Servo.](/assets/media/tiny-robot-arm/TinyRobotArmCircuit.png "Robot Arm Circuit")
 
 ### All Together
-![3D models mentioned earlier were assembled into a small blue robot arm posed in a working position.](/assets/media/tiny-robot-arm/TinyRobotArm.png "Tiny Robot Arm")
+![3D models mentioned earlier were assembled into a small blue robot arm posed in a working position.](/assets/media/tiny-robot-arm/TinyRobotArm.PNG "Tiny Robot Arm")
 Everything went together nicely on this one. The 3D printed parts exceeded my expectations!
 
 
