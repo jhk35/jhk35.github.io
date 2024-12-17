@@ -5,6 +5,11 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write  # Add this line to grant the necessary permission
+
 jobs:
   build:
     runs-on: ubuntu-latest
