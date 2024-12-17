@@ -25,7 +25,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1  # GitHub-hosted runner will take care of Ruby installation
         with:
-          ruby-version: '3.1'  # Or use the version you want, like '3.1.4'
+          ruby-version: '3.1.6'  # Or use the version you want, like '3.1.4'
           bundler-cache: true
         
       - name: Setup Pages
