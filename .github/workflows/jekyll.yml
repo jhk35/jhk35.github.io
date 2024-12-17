@@ -8,27 +8,38 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1.6'
+          ruby-version: '3.2.0'  # Upgrade to Ruby 3.2.0
           bundler-cache: true
-      - name: Install Bundler
-        run: gem install bundler
-      - name: Install dependencies
+
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y build-essential libssl-dev libreadline-dev zlib1g-dev
+
+      - name: Clear Bundler cache
+        run: bundle clean --force
+
+      - name: Install dependencies with verbose logging
         run: bundle install --verbose
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+
 
   deploy:
     needs: build
